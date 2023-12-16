@@ -1,5 +1,5 @@
 body {
-    background-image: url('bgnd2.jpg');
+    background-image: url('/My-Blog/pics/background.jpg');
     background-size: cover;  /* Cover the entire viewport */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-position: center; /* Center the image in the page */
