@@ -1,5 +1,5 @@
 body {
-    background-image: url('/My-Blog/pics/background.jpg');
+    background-image: url('pics/background.jpg');
     background-size: cover;  /* Cover the entire viewport */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-position: center; /* Center the image in the page */
@@ -71,7 +71,7 @@ hr {
 }
 
 .hobby-box{
-    width: 10%;
+    width: 100px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -79,14 +79,15 @@ hr {
 }
 .hobby-box > img{
     border: solid white;
-    width: 50px;   /* Set a fixed width */
-    height: 50px;  /* Set the same value for height to make it circular */
+    width: 70px;   /* Set a fixed width */
+    height: 70px;  /* Set the same value for height to make it circular */
     border-radius: 50%;
     object-fit: cover; /* Ensures the image covers the area nicely */
 }
 
 .hobby-box > span{
     padding-right: 27%;
+    font-size: small;
 }
 
 
