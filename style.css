@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-position: center; /* Center the image in the page */
     height: 100vh; /* Optional: make the body height cover the whole viewport */
+    overflow: hidden;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -41,10 +42,13 @@ body {
 }
 
 .content-flex {
+    position: relative; /* Establish a positioning context */
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; /* This will space out the text-box and blog-slider */
+    height: 100vh; /* Full viewport height */
     padding-top: 2%;
+    margin: 0; /* Remove default margins */
+    
 }
 
 .text-box {
@@ -63,33 +67,59 @@ hr {
 
 .blog-slider{
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    max-height: calc(100vh - 100px); /* Adjust the calc() value as needed */
+    scrollbar-width: thin; /* For modern browsers */
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on touch devices */
+    scrollbar-color: #888 #222; /* Scrollbar styling */
     text-align: center;
     color: white;
     height: fit-content;
-    gap: 5px;
-    align-self: flex-end;
-    padding-left: 20% ;
-    padding-bottom: 5px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 2%;
+    border: solid white;
 }
 
-.hobby-box{
-    width: 80px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-weight: bold;
-    align-items: center;
+.blog-slider::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.blog-slider::-webkit-scrollbar-track {
+    background: #222; /* Track color */
+}
+
+.blog-slider::-webkit-scrollbar-thumb {
+    background: #888; /* Thumb color */
+}
+
+.hobby-box{ 
+    display: flex; /* Corrected from 'flexbox' */
+    flex-direction: row; /* Side by side for image and text */
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the start horizontally */
+    width: auto; /* Make sure the width fits content or use a specific value */
+    margin: 0; /* Remove margin if not needed */
+    border: solid white;
+    padding: 3%;
 }
 .hobby-box > img{
     border: solid white;
-    width: 50px;   /* Set a fixed width */
-    height: 50px;  /* Set the same value for height to make it circular */
+    width: 100px;   /* Set a fixed width */
+    height: 100px;  /* Set the same value for height to make it circular */
     border-radius: 50%;
     object-fit: cover; /* Ensures the image covers the area nicely */
 }
 
 .hobby-box > span{
-    font-size: small;
+    font-size: large;
+    margin-left: 5px; /* Add space between the image and text */
+    margin-right: 20px;
+    white-space: nowrap; /* Prevent the text from wrapping */
+
 }
 
 .navbar{
