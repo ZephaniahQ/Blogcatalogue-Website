@@ -1,7 +1,8 @@
 body {
-    background-image: url('pics/background.jpg');
-    background-size: cover;  /* Cover the entire viewport */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-color: black;
+    /*background-image: url('pics/background.jpg');
+    background-size: cover;  /* Cover the entire viewport 
+    background-repeat: no-repeat; /* Prevent the image from repeating 
     background-position: center; /* Center the image in the page */
     height: 100vh; /* Optional: make the body height cover the whole viewport */
     overflow: hidden;
@@ -13,7 +14,6 @@ body {
     justify-content: space-between;
     flex-direction: column;
     color: white;
-    border: solid white;
     height: 12vh;
     width: 100%;
 }
@@ -25,6 +25,10 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+hr{
+    width: 96%;
+}
+
 .header-buttons {
     display: flex;
     flex-direction: row; /* Ensures the items are in a row */
@@ -32,7 +36,7 @@ body {
     gap: 50px; /* Spacing between each button, adjust as needed */
     font-size: larger;
     font-weight: bold;
-    margin-left: 31%;
+    margin-left: 34%;
 }
 
 .text-link {
@@ -48,17 +52,24 @@ body {
     justify-content: space-between; /* This will space out the text-box and blog-slider */
     height: 100vh; /* Full viewport height */
     margin: 0; /* Remove default margins */
-    
 }
 
 .text-box {
     font-size: larger;
-    width: 50%;
-    padding: 0 20px; /* Add some padding around the text */
+    width: 81%;
+    /*padding: 0 20px; /* Add some padding around the text */
     color: white;
-    height: 85vh;
+    height: 83.449vh;
+    /*margin-left: 2%;
+    margin-top: 2%;*/
+    background-image: url('pics/background.jpg');
+    background-size: cover;  /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image in the page */
+    margin-top: 0.5%;
     margin-left: 2%;
-    margin-top: 2%;
+    border: solid white;
+    padding: 5px 20px
 }
 
 .blog-slider{
@@ -75,12 +86,11 @@ body {
     text-align: center;
     color: white;   
     height: fit-content;
-    width: 18%;
-    margin-left: auto;
+    width: 300px;
     border: solid white  2px;
     height: 85vh;
-    background-color: black;
-    opacity: 75%;
+    margin-top: 0.5%;
+    
 }
 
 .blog-slider::-webkit-scrollbar {
@@ -101,7 +111,6 @@ body {
     align-items: center; /* Center items vertically */
     justify-content: flex-start; /* Align items to the start horizontally */
     width: auto; /* Make sure the width fits content or use a specific value */
-    margin: 0; /* Remove margin if not needed */
     padding: 5%;
 }
 .hobby-box > img{
@@ -124,8 +133,11 @@ body {
     flex-direction: row;
     align-items: center;
     height: 12vh;
-    background-color: black;
-    opacity: 60%;
+    padding-left: 2%;
+    /*background-color: black;
+    opacity: 60%;*/
+    /*background-color: rgb(0,0,0); /* Fallback color
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
 }
 
 
