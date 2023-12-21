@@ -117,8 +117,8 @@ hr{
 }
 .hobby-img{
     border: solid black;
-    width: 95px;   /* Set a fixed width */
-    height: 95px;  /* Set the same value for height to make it circular */
+    width: 100px;   /* Set a fixed width */
+    height: 100px;  /* Set the same value for height to make it circular */
     border-radius: 50%;
     object-fit: cover; /* Ensures the image covers the area nicely */
 }
