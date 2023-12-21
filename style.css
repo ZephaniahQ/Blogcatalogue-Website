@@ -116,7 +116,7 @@ hr{
     padding: 5%;
 }
 .hobby-img{
-    border: solid white;
+    border: solid black;
     width: 95px;   /* Set a fixed width */
     height: 95px;  /* Set the same value for height to make it circular */
     border-radius: 50%;
