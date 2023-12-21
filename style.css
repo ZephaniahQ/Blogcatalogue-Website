@@ -115,7 +115,7 @@ hr{
     width: auto; /* Make sure the width fits content or use a specific value */
     padding: 5%;
 }
-.hobby-box > img{
+.hobby-img{
     border: solid white;
     width: 95px;   /* Set a fixed width */
     height: 95px;  /* Set the same value for height to make it circular */
@@ -158,13 +158,17 @@ hr{
     padding-top: 18px;
 }
 
-/*a.clickable-span {
+a.clickable-span {
     text-decoration: none; /* Removes underline from links */
-    color: inherit; /* The link will have the same color as the text around it 
+    color: inherit; /* The link will have the same color as the text around it */
     font-style: none;
+    display: flex;
+    align-items: center;
 }
 
-a.clickable-span:hover {
-  color: yellow;
-}*/
+a.clickable-span:hover .hobby-title,
+a.clickable-span:hover .hobby-img {
+    color: yellow; /* Changes the text color */
+    border-color: yellow; /* Changes the img border color */
+}
 
