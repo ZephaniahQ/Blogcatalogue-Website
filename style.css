@@ -157,3 +157,14 @@ hr{
 .hobby-block{
     padding-top: 18px;
 }
+
+/*a.clickable-span {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* The link will have the same color as the text around it 
+    font-style: none;
+}
+
+a.clickable-span:hover {
+  color: yellow;
+}*/
+
