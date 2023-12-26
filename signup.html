@@ -21,20 +21,55 @@
             <div class="header-buttons" style="margin-left: 560px;">
                 <a href="index.html" class="text-link">Home</a>
                 <a href="signup.html" class="text-link">Sign-up</a>
-                <a href="#" class="text-link">Contact</a>
+                <a href="contact.html" class="text-link">Contact</a>
             </div>
         </div>
         <hr>
     </div>
     <div class="signup-flex">
-        <div class="signup-box">
-            <form class="signup-form" action="#" method="post">
-                <h2>Sign Up</h2><br>
-                <input type="text" name="fullname" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="number" name="phonenumber" placeholder="Phone Number" required>
-                <input type="password" name="password" placeholder="Password" required>
-                <button type="submit">Sign Up</button>
+        <div class="signup-form">
+            <form action="/submit-your-form-link" method="post">
+                <div class="form-input">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+        
+                <div class="form-input">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <div class="form-input">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+        
+                <div class="form-input">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age">
+                </div>
+        
+                <div class="form-input">
+                    <label for="birthdate">Birthdate:</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </div>
+        
+                <div class="form-input">
+                    <label>Gender:</label>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="female">Female</label>  
+                    <input type="radio" id="female" name="gender" value="female">
+                </div>
+        
+                <div class="form-input">
+                    <label for="newsletter">Subscribe to newsletter:</label>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                </div>
+        
+                <div class="form-input">
+                    <input type="submit" value="Sign Up">
+                </div>
             </form>
         </div>
     </div>

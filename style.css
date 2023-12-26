@@ -230,37 +230,37 @@ a.clickable-span:hover .hobby-img {
     background-size:auto;  /* Cover the entire viewport */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-position: center; /* Center the image in the page */
-    padding: 50px 80px;
     align-items: center;
     justify-content: center;
     min-height: 88vh; /* Adjust based on your layout */
+    overflow: auto;
 }
 
-/*signup form prototyping*/
+/*signup form prototyping
 
 .signup-form {
-    width: 300px; /* Adjust width as needed */
+    width: 300px; /* Adjust width as needed 
     padding: 20px;
-    background: white; /* White form background */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    border-radius: 8px; /* Rounded corners */
+    background: white; /* White form background 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth 
+    border-radius: 8px; /* Rounded corners 
 }
 
 .signup-form input[type="text"],
 .signup-form input[type="email"],
 .signup-form input[type="number"],
 .signup-form input[type="password"] {
-    width: calc(100% - 20px); /* Full width minus padding */
+    width: calc(100% - 20px); /* Full width minus padding 
     padding: 10px;
-    margin-bottom: 10px; /* Space between fields */
-    border: 1px solid #ddd; /* Light grey border */
-    border-radius: 4px; /* Slightly rounded edges */
+    margin-bottom: 10px; /* Space between fields 
+    border: 1px solid #ddd; /* Light grey border 
+    border-radius: 4px; /* Slightly rounded edges 
 }
 
 .signup-form button {
     width: 100%;
     padding: 10px;
-    background: #007bff; /* Bootstrap primary color */
+    background: #007bff; /* Bootstrap primary color 
     color: white;
     border: none;
     border-radius: 4px;
@@ -268,5 +268,109 @@ a.clickable-span:hover .hobby-img {
 }
 
 .signup-form button:hover {
+    background: #0056b3; /* Darken color on hover 
+}*/
+
+.signup-form {
+    width: 300px; /* Adjust width as needed */
+    padding: 20px;
+    background: white; /* White form background */
+    border: solid black 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    margin: auto; /* Center the form */
+}
+
+.signup-form input[type="text"],
+        .signup-form input[type="email"],
+        .signup-form input[type="number"],
+        .signup-form input[type="password"],
+        .signup-form input[type="date"] {
+            width: calc(100% - 20px); /* Full width minus padding */
+            padding: 10px;
+            margin-bottom: 2px; /* Space between fields */
+            border: 1px solid #ddd; /* Light grey border */
+            border-radius: 5px; /* Slightly rounded edges */
+        }
+
+.form-input {
+    margin-bottom: 5px;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-input input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    background: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px; /* Added margin-top for spacing */
+}
+
+.signup-form input[type="submit"]:hover,
+.signup-form input[type="checkbox"],
+.signup-form input[type="radio"] {
     background: #0056b3; /* Darken color on hover */
+    cursor: pointer;
+}
+
+/*contact prototyping*/
+
+.contact-container{
+    width: 300px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    margin-top: 22vh;
+}
+
+.contact-container h2 {
+    margin-bottom: 20px;
+}
+
+.contact-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.2sk;
+}
+
+.contact-link:hover {
+    background-color: #f8f8f8;
+}
+
+.icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.contact-link > a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-logo{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    object-fit: cover;
+
 }
