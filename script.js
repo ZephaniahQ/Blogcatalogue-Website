@@ -10,3 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+function iframeLoaded(iframeElement) {
+    // Hide the loading spinner
+    iframeElement.previousElementSibling.style.display = 'none';
+    // Show the iframe
+    iframeElement.style.visibility = 'visible';
+}
