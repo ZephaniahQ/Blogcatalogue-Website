@@ -222,6 +222,13 @@ a.clickable-span:hover .hobby-img {
     text-align: right;
 }
 
+.published{
+    color: greenyellow;
+    font-size: x-small;
+    font-style: none;
+    text-align: left;
+}
+
 .signup-flex{
     display: flex;
     flex-direction: row;
