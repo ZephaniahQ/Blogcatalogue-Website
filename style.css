@@ -184,3 +184,40 @@ a.clickable-span:hover .hobby-img {
     align-items: center;
     width: 90%;
 }
+
+.blog-section{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    width: 200px;
+    border: solid white 1px;
+    gap: 30px;
+    padding-top:10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.selection-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    padding-left: 10px;
+    /*border: solid white 1px;*/
+    text-align: left;
+    border: solid gray 1px;
+}
+
+.selection-box:hover{
+    color: yellow;
+    border: solid yellow 1px;
+    cursor: pointer;
+}
+
+.comming-soon{
+    color: aqua;
+    font-size: small;
+    font-style: italic;
+    text-align: right;
+}
